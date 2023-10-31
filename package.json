@@ -1,0 +1,27 @@
+{
+  "name": "nullize",
+  "version": "0.1.3",
+  "description": "Zero out byte arrays before cleanup",
+  "homepage": "https://github.com/blu3beri/nullize-ts",
+  "bugs": {
+    "url": "https://github.com/berendsliedrecht/nullize-ts/issues",
+    "email": "blu3beri@proton.me"
+  },
+  "repository": {
+    "url": "https://github.com/blu3beri/nullize-ts",
+    "type": "git"
+  },
+  "files": ["build"],
+  "main": "build/index.js",
+  "keywords": ["nullize", "zeroize", "memory-management", "cleanup"],
+  "author": "Berend Sliedrecht <blu3beri@proton.me>",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf build; tsc",
+    "release": "pnpm build && pnpm publish"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "typescript": "~5.2.2"
+  }
+}
